@@ -4,8 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.JS" defer></script>
 </head>
 <body>
-    
+    <!--Home section -->
+
+    <section class="home-section">
+        <header class="header">
+            <img src="saarelogo.svg" alt="logo">
+
+            <div class="location">
+                <img id="location-icon" src="Location.svg" alt="location">
+                <h4>Akure</h4>
+            </div>
+        </header>
+        <img id="backgroung-img" src="bg image.png" alt="backgroung-img">
+
+        <div class="section-note">
+           <h1 class="note-line-1">Get a Rider to Deliver</h1>
+           <h1 class="note-line-2">or Drop-off</h1>
+           <h1 class="note-line-3">Package to You</h1>
+        </div>
+        
+        <div class="section-buttons">
+            <h2 class="request-btn" onclick=showInfomations()>Request a rider now</h2>
+            <h2 class="track-btn" >Track an order </h2>
+           
+        </div>
+<!--  -->
+
+<!--  -->
+        <div class="section-help">
+            <p>Need help?</p>
+            <p id="support-text">Contact Support</p>
+        </div>
+    </section>
+
+     <!-- REQUEST A RIDER SECTION-->
+    <section class="informations">
+        <div class="information-details">
+            <nav class="information-topbar" onclick=hideInformations()>
+                <img src="closeicon.svg" alt="*" class="closeicon" >
+                
+                <h2>Request a rider</h2>
+            </nav>
+ 
+            <!-- sender-information -->
+
+            <div class="sender-information">
+                <h2>Sender information</h2>
+                <input type="text" name="text" placeholder="Sender's name" required="">
+
+                <div class="sender-location-info">
+                    <img src="Location2.svg" alt="location" class="location2-icon">
+                    <input type="text" name="text" placeholder="      Enter sender/pick-up location" required="" >
+                    <p>Rider will be pick package from this address</p>
+                </div>
+                <div class="sender-phone-number">
+                    <button id="num">+234</button>
+                    <input type="number" placeholder="Sender's phone number">
+                </div>
+            </div>
+
+                <!-- receiver-information -->
+
+            <div class="divider">
+                <h2> </h2>
+            </div>
+
+
+
+
+            <div class="receiver-information">
+                <h2>Receiver information</h2>
+                <input type="text" name="text" placeholder="Receiver's name" required="" >
+
+                <div class="receiver-location-info">
+                    <img src="Location2.svg" alt="location" class="location2-icon">
+                    <input type="text" name="text" placeholder="      Enter sender/pick-up location" required="">
+                    <p>Rider will be deliver package to this address</p>
+                </div>
+
+                <div class="receiver-phone-number">
+                    <button id="num">+234</button>
+                    <input type="number" placeholder="Sender's phone number" required="">
+                </div>
+            </div>
+
+
+            <div class="divider">
+                <h2> </h2>
+            </div>
+
+
+            <div class="describe">
+                <h2>Describe your package (optional)</h2>
+                <input type="text" placeholder="Describe your package">
+                
+            </div>
+
+            <button id="continue">Continue</button>
+        </div>
+    </section>
+   
 </body>
 </html>

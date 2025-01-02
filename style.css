@@ -1,0 +1,386 @@
+:root{
+    --text-color:#000000;
+    --surface-5:#FBEEC2;
+    --special-text-color:#CE9F09;
+    --Reference-Primary-Primary-60:#CE9F09;
+    --Primary: #F0B90A;
+    --Small-radius:8px;
+    --Secondary:#0C0900;
+    --Outline: #CCC;
+    --Reference-Secondary-Secondary-80: #3E3B34;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow: hidden;
+    background: var(--surface-5);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+.home-section{
+    position: relative;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 24px;
+
+}
+.location{
+    max-height: 20px;
+    max-width: 72px;
+    display: flex;
+    align-items: center;
+    padding:8px;
+    gap: 8px;
+    background-color: var(--surface-5);
+    border-radius: 24px;
+    
+}
+#location-icon{
+    min-height: 20px;
+    max-width: 20px;
+}
+#backgroung-img{
+    min-width: 324px;
+    min-height: 324px;
+    display: block;
+}
+.section-note{
+    display: flex;
+    padding: 0px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1px;
+    align-self: stretch;
+    min-width: 352px;
+    margin: auto;
+    
+
+}
+.note-line-1,
+.note-line-2,
+.note-line-3{
+    font-size: 32px;
+    margin: auto;
+}
+
+.section-buttons{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+.request-btn{
+    display: flex;
+    padding: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    box-sizing: border-boxs;
+    border: #000 2px;
+    border-radius: var(--Small-radius, );
+    background: var(--Primary, #F0B90A)
+}
+.track-btn{
+    display: flex;
+    padding: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--Small-radius, );
+    border: solid 1px;
+    background:white;
+   
+}
+
+.section-help{
+    display: flex;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+#support-text{
+    color:    var(--Reference-Primary-Primary-60);
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+.informations{  
+    margin: 0px;
+    background: white;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translateY(-750px);
+    display: none;
+    transition: 800ms ease-in-out;
+    overflow-y: auto;
+}
+
+
+
+.information-details{
+    display: flex;
+    max-width: 412px;
+    margin-top: px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+    transition: 800ms ease-in-out;
+    overflow-y: scroll;
+}
+.information-topbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.information-topbar h2{
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.4px;
+}
+.closeicon{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.sender-information{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -10px;
+}
+.sender-information h2{
+    color:#0C0900;
+    font-feature-settings: 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+}
+.location2-icon{
+    position: absolute;
+    margin: 16px;
+}
+.sender-information input{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--Small-radius);
+    border: 1px solid var(--Outline);
+    background:  #FFF;
+    outline: none;
+}
+
+.sender-location-info input{
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--Small-radius);
+    border: 1px solid var(--Outline);
+    background:  #FFF;
+    outline: none;
+}
+
+
+.sender-location-info{
+    display: flex;
+    flex-wrap: wrap;
+     margin-top: 16px;
+}
+.sender-phone-number{
+    display: flex;
+    justify-content: space-between;
+}
+.sender-phone-number input{
+    width: 68%;
+}
+.sender-location-info p{
+    color: var(--Reference-Secondary-Secondary-80, #3E3B34);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    margin-top: -1px;
+}
+
+.divider{
+    height: 1px;
+    background: #F3F3F3;
+    width: 100%;
+    margin-top: -19px;
+}
+.receiver-information{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
+    
+}
+.receiver-information h2{
+    color:#0C0900;
+    font-feature-settings: 'liga' off;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+}
+.location2-icon{
+    position: absolute;
+    margin: 16px;
+}
+.receiver-information input{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--Small-radius);
+    border: 1px solid var(--Outline);
+    background:  #FFF;
+    outline: none;
+}
+
+.receiver-location-info input{
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--Small-radius);
+    border: 1px solid var(--Outline);
+    background:  #FFF;
+    outline: none;
+    
+}
+
+
+.receiver-location-info{
+    display: flex;
+    flex-wrap: wrap;
+     margin-top: 16px;
+}
+
+.receiver-location-info p{
+    color: var(--Reference-Secondary-Secondary-80, #3E3B34);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -1px;
+    line-height: 20px; /* 166.667% */
+}
+.receiver-phone-number{
+    display: flex;
+    justify-content: space-between;
+}
+.receiver-phone-number input{
+    width: 68%;
+}
+#num{
+    display: flex;
+    padding: var(--Padling, 15px) var(--Margin, 20px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing, 3px);
+    align-self: stretch;
+    outline: none;
+    text-decoration: none;
+    cursor: none;
+    border-radius: var(--Small-radius);
+    background: white;
+    border: 1px solid var(--Outline);
+}
+
+.describe{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    position: relative;
+    top: -26px;
+}
+
+.describe h2{
+    color: #000;
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+}
+.describe input{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: var(--Small-radius);
+    border: 1px solid var(--Outline);
+    background:  #FFF;
+    outline: none;    
+}
+
+#continue{
+    display: flex;
+    padding: var(--Padling, 20px) var(--Margin, 20px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing, 8px);
+    align-self: stretch;
+    height: 10px ;
+    position: relative;
+    top: -30px;
+    border-radius: var(--Corner-radius, 8px);
+    background: var(--Primary, #F0B90A);
+    outline: none;
+}
